@@ -683,6 +683,9 @@ var getCaptcha = function(img) {
 
 
 var img = document.getElementById('imgCaptcha');
+var changeButton = document.getElementsByName('vrfcd')[0].nextSibling.nextSibling;
+changeButton.addEventListener("click", loaded);
+
 
 function loaded() {
 
