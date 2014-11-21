@@ -713,7 +713,7 @@ function loaded() {
     }
 
     console.log("Made with ♥, Karthik Balakrishnan");
-    console.log("http://github.com/karthikb351/AutoCaptcha-for-chrome");
+    console.log("http://github.com/karthikb351/AutoCaptcha-for-Chrome");
 }
 
 if (img.complete) {
