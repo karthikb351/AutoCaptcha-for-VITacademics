@@ -681,10 +681,14 @@ var getCaptcha = function(img) {
     return res;
 };
 
-
+//To add "Change Verification Code" Support: 
 var img = document.getElementById('imgCaptcha');
 var changeButton = document.getElementsByName('vrfcd')[0].nextSibling.nextSibling;
-changeButton.addEventListener("click", loaded);
+changeButton.addEventListener("click", function(){
+    img.onload = function(){
+       loaded();         
+    };
+});
 
 
 function loaded() {
