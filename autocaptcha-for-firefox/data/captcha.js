@@ -683,6 +683,12 @@ var getCaptcha = function(img) {
 
 
 var img = document.getElementById('imgCaptcha');
+var changeButton = document.getElementsByName('vrfcd')[0].nextSibling.nextSibling;
+changeButton.addEventListener("click", function(){
+    img.onload = function(){
+       loaded();         
+    };
+});
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
