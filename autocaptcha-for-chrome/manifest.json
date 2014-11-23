@@ -1,6 +1,6 @@
 {
   "name": "AutoCaptcha for Chrome",
-  "version": "0.1",
+  "version": "0.2",
   "author": "Karthik Balakrishnan",
   "description": "Fills in the captcha on academics.vit.ac.in",
   "permissions": ["*://academics.vit.ac.in/*"],
