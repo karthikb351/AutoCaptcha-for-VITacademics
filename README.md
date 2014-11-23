@@ -22,7 +22,15 @@
 
 1. Download the extension - [AutoCaptcha for Firefox](autocaptcha-for-firefox.xpi?raw=true)
 
-2. Click install Add-on. Voila.
+2. Click on the three lines shown on the top-right corner in your browser, which will open a menu for you. Click on Add-ons.” You will be redirected to your browser’s Add-ons page.
+
+3. Once on the Add-ons page, click on the gear icon on the top-right corner of the screen.
+
+4. Select "Install Add-on From File.." and select the file you just downloaded. 
+
+5. Click on "Install Now". You should get a notification in the top left corner saying the Add-on was install successfully.
+
+6. Visit the and of academics.vit.ac.in pages and the captcha should be auto-filled for you. Voila.
 
 ## Bugs and feature requests
 
