@@ -705,6 +705,16 @@ function loaded() {
     {
     	console.info("Parsed Captcha "+captcha+" in "+(endTime-startTime)+" milliseconds");
     	var textbox = document.getElementsByName('vrfcd')[0];
+        var para = document.createElement("P");
+        var aTag = document.createElement('a');
+        aTag.setAttribute('href',"https://github.com/karthikb351/AutoCaptcha-for-Chrome");
+        aTag.innerHTML = "AutoCaptcha";
+        aTag.style.cssText="font-size: 10px;";
+        var t = document.createTextNode(" - with ♥, Karthik Balakrishnan");
+        para.style.cssText=" font-size: 10px; text-align: center; margin-top: 0px; ";
+        para.appendChild(aTag);
+        para.appendChild(t);  
+        textbox.parentElement.appendChild(para);
     	textbox.value=captcha;
     }
     else
