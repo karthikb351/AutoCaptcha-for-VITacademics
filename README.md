@@ -1,6 +1,6 @@
 # AutoCaptcha for Chrome
 
-## Manual Installation
+## Manual Installation - Chrome
 
 1. Download the extension - [AutoCaptcha for Chrome](autocaptcha-for-chrome.crx?raw=true)
 
@@ -18,6 +18,11 @@
 
 8. Visit the and of academics.vit.ac.in pages and the captcha should be auto-filled for you. Voila.
 
+## Manual Installation - Firefox
+
+1. Download the extension - [AutoCaptcha for Firefox](autocaptcha-for-firefox.xpi?raw=true)
+
+2. Click install Add-on. Voila.
 
 ## Bugs and feature requests
 
