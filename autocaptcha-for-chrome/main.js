@@ -684,10 +684,19 @@ var getCaptcha = function(img) {
 
 var img = document.getElementById('imgCaptcha');
 
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-57013788-1', 'auto');
+ga('send', 'pageview');
+
+
+
 function loaded() {
 
     console.log("AutoCaptcha for Chrome");
-    
 
     var canvas = document.createElement('canvas');
     var context = canvas.getContext('2d');
@@ -716,6 +725,7 @@ function loaded() {
         para.appendChild(t);  
         textbox.parentElement.appendChild(para);
     	textbox.value=captcha;
+        ga('send', 'event', 'captcha', 'solved_in', endTime-startTime); 
     }
     else
     {
@@ -730,7 +740,4 @@ if (img.complete) {
     loaded();
 } else {
     img.addEventListener('load', loaded);
-    img.addEventListener('error', function() {
-        alert('error')
-    });
 }
