@@ -1,8 +1,20 @@
-# AutoCaptcha for Chrome
+# AutoCaptcha for Chrome/Firefox
 
-## Installation - Chrome
+Simple extension to fill in the captcha at [academics.vit.ac.in](academics.vit.ac.in).
 
-### Manual
+## Installation
+
+### Chrome
+
+Download from the Chrome Web Store - [AutoCaptcha for Chrome](https://chrome.google.com/webstore/detail/autocaptcha-for-chrome/eijomdbdgdgahocoefdnhdkphonpieec?utm_source=github)
+
+### Firefox
+
+Download from the Firefox Add-ons website - [AutoCaptcha for Firefox](https://addons.mozilla.org/en-US/firefox/addon/autocaptcha-for-firefox/)
+
+## Manual Installation
+
+### Chrome
 
 1. Download the extension - [AutoCaptcha for Chrome](autocaptcha-for-chrome.crx?raw=true)
 
@@ -16,17 +28,10 @@
 
 6. Once you have dropped the file, it will ask if you want to add the extension to your browser. Click on “Add” to manually install the extension.
 
-7. When Chrome has finished installing the extension, you will see something like the following. It indicates the extension was successfully installed.
+7. Visit the any of academics.vit.ac.in pages and the captcha should be auto-filled for you. Voila.
 
-8. Visit the and of academics.vit.ac.in pages and the captcha should be auto-filled for you. Voila.
 
-## Installation - Firefox
-
-### Firefox Add-ons Site
-
-Download from the Firefox Add-ons website - [AutoCaptcha for Firefox](https://addons.mozilla.org/en-US/firefox/addon/autocaptcha-for-firefox/)
-
-### Manual 
+### Firefox 
 
 1. Download the extension - [AutoCaptcha for Firefox](autocaptcha-for-firefox.xpi?raw=true)
 
@@ -38,7 +43,7 @@ Download from the Firefox Add-ons website - [AutoCaptcha for Firefox](https://ad
 
 5. Click on "Install Now". You should get a notification in the top left corner saying the Add-on was install successfully.
 
-6. Visit the and of academics.vit.ac.in pages and the captcha should be auto-filled for you. Voila.
+6. Visit the any of academics.vit.ac.in pages and the captcha should be auto-filled for you. Voila.
 
 ## Bugs and feature requests
 
