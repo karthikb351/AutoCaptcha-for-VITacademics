@@ -4,6 +4,7 @@
   "author": "Karthik Balakrishnan",
   "description": "Fills in the captcha on academics.vit.ac.in",
   "permissions": ["*://academics.vit.ac.in/*"],
+  "update_url": "https://github.com/karthikb351/AutoCaptcha-for-Chrome/blob/master/chrome_update.xml",
   "content_scripts": [
     {
       "matches": ["*://academics.vit.ac.in/parent/parent_login.asp","*://academics.vit.ac.in/student/stud_login.asp","*://academics.vit.ac.in/parent/","*://academics.vit.ac.in/student/"],
