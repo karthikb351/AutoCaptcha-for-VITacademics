@@ -696,8 +696,7 @@ changeButton.addEventListener("click", function(){
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-57013788-1', 'auto');
-ga('send', 'pageview');
+
 
 function addCredits() {
     if(document.getElementById("credit"))
@@ -720,8 +719,10 @@ function addCredits() {
 }
 
 function loaded() {
+    ga('create', 'UA-57013788-1', 'auto');
+    ga('send', 'pageview');
 
-    console.log("AutoCaptcha for Chrome");
+    console.log("AutoCaptcha for Chrome");  
 
     var canvas = document.createElement('canvas');
     var context = canvas.getContext('2d');
