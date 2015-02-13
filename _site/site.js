@@ -100,12 +100,16 @@ $(document).ready(function (){
     var isChrome = !!window.chrome && !isOpera;              // Chrome 1+
     var isIE = /*@cc_on!@*/false || !!document.documentMode; // At least IE6
 
-    if(isChrome) {
+    var isMobile = false;
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        isMobile = true;
+    }
+    if(isChrome && !isMobile) {
         $('.ext-install-chrome').show();
         $('.ext-install-firefox').hide();
         $('.ext-install-default').hide();
     }
-    else if (isFirefox) {
+    else if (isFirefox && !isMobile) {
         $('.ext-install-chrome').hide();
         $('.ext-install-firefox').show();
         $('.ext-install-default').hide();
