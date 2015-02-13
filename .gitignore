@@ -15,3 +15,6 @@ sftp-config.json
 
 # Chrome extension private key
 *.pem
+
+_site/
+.sass-cache/
