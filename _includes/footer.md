@@ -1,8 +1,5 @@
 
 
-Design by Tim O'Brien [t413.com](http://t413.com/)
-&mdash;
-[SinglePaged theme](https://github.com/t413/SinglePaged)
-&mdash;
-this site is [open source]({{ site.source_link }})
-
+Made with full feels - [Karthik Balakrishnan](http://www.karthikbalakrishnan.com)
+<br>
+Design by [Tim O'Brien](http://t413.com/) | Powered by [Jekyll](http://jekyllrb.com)
