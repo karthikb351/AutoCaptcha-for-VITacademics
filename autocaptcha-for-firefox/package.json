@@ -1,9 +1,0 @@
-{
-  "name": "autocaptcha-for-firefox",
-  "title": "AutoCaptcha for Firefox",
-  "id": "jid1-aEL04CgHfwCOwA",
-  "description": "Fills in the captcha on academics.vit.ac.in",
-  "author": "Karthik Balakrishnan",
-  "license": "MIT",
-  "version": "0.3.3"
-}

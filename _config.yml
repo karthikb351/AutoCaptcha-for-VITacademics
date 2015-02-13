@@ -1,0 +1,35 @@
+---
+
+port: 4000
+host: 0.0.0.0
+safe: false
+
+
+### site serving configuration ###
+exclude: [CNAME, README.md, .gitignore]
+permalink: / ## disables post output
+timezone: null
+lsi: false
+markdown: kramdown
+highlighter: pygments
+
+
+### content configuration ###
+title:       "AutoCaptcha - For Chrome and Firefox"
+keywords:    "VITacademics, academics.vit.ac.in, VIT University, captcha"
+description: "Chrome and Firefox extension to fill in the captcha at academics.vit.ac.in"
+source_link: "https://github.com/karthikb351/AutoCaptcha-for-Chrome"
+favicon:     "img/favicon.ico"
+touch_icon:  "img/apple-touch-icon.png"
+google_analytics_key: UA-57013788-3
+
+
+### template colors, used site-wide via css ###
+colors:
+  black:     '#111111'
+  white:     '#f8f8f8'
+  blue:      '#49a7e9'
+  green:     '#9bcf2f'
+  purple:    '#c869bf'
+  orange:    '#fab125'
+  turquoise: '#0fbfcf'
