@@ -1,16 +1,16 @@
 {
   "name": "AutoCaptcha for Chrome",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "author": "Karthik Balakrishnan",
-  "description": "Fills in the captcha on academics.vit.ac.in",
+  "description": "Fills in the captcha for you at VIT's Academics page",
   "permissions": ["*://academics.vit.ac.in/*"],
   "content_scripts": [
     {
-      "matches": ["*://academics.vit.ac.in/parent/parent_login.asp","*://academics.vit.ac.in/student/stud_login.asp","*://academics.vit.ac.in/parent/","*://academics.vit.ac.in/student/"],
+      "matches": ["*://academics.vit.ac.in/parent/parent_login.asp","*://academics.vit.ac.in/student/stud_login.asp","*://academics.vit.ac.in/parent/","*://academics.vit.ac.in/student/","*://27.251.102.132/parent/parent_login.asp","*://27.251.102.132/student/stud_login.asp","*://27.251.102.132/parent/","*://27.251.102.132/student/"],
       "js": ["captcha.js"]
     },
     {
-      "matches": ["*://academics.vit.ac.in/*/attn_report.asp*"],
+      "matches": ["*://academics.vit.ac.in/*/attn_report.asp*","*://27.251.102.132/*/attn_report.asp*"],
       "all_frames": true,
       "js": ["attendance.js"]
     }
