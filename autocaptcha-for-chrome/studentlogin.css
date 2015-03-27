@@ -23,6 +23,12 @@
     white-space: nowrap;
     color:#fff;
     }
+    /* Added below css to remove captcha from being show as it's
+    automatically being filled */
+        form[name="stud_login"] tr:nth-last-of-type(2),
+form[name="stud_login"] tr:nth-last-of-type(3) {
+  display: none;
+}
     input[type="text"],input[type="password"] {
         border-color: #1d2a5b;
     border-radius: 2px;
