@@ -7,10 +7,7 @@
   "content_scripts": [
     {
       "matches": ["*://academics.vit.ac.in/parent/parent_login.asp","*://academics.vit.ac.in/student/stud_login.asp","*://academics.vit.ac.in/parent/","*://academics.vit.ac.in/student/","*://27.251.102.132/parent/parent_login.asp","*://27.251.102.132/student/stud_login.asp","*://27.251.102.132/parent/","*://27.251.102.132/student/"],
-      "js": ["captcha.js"]
-    },
-    {
-      "matches": ["*://academics.vit.ac.in/student/student_login.asp"],
+      "js": ["captcha.js"],
       "css": ["studentlogin.css"]
     },
     {
