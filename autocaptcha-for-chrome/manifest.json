@@ -3,6 +3,12 @@
   "version": "0.3.4",
   "author": "Karthik Balakrishnan",
   "description": "Fills in the captcha for you at VIT's Academics page",
+  "homepage_url": "https://github.com/karthikb351/AutoCaptcha-for-Chrome",
+  "icons": {
+		"16": "icon-16.png",
+		"48": "icon-48.png",
+		"128": "icon-128.png"
+	},
   "permissions": ["*://academics.vit.ac.in/*"],
   "content_scripts": [
     {
