@@ -1,8 +1,8 @@
 {
-  "name": "AutoCaptcha for Chrome",
-  "version": "0.3.4",
+  "name": "AutoCaptcha for VITacademics",
+  "version": "0.3.5",
   "author": "Karthik Balakrishnan",
-  "description": "Fills in the captcha for you at VIT's Academics page",
+  "description": "Fills in the captcha for you at VIT's Academics page (academics.vit.ac.in)",
   "permissions": ["*://academics.vit.ac.in/*"],
   "content_scripts": [
     {

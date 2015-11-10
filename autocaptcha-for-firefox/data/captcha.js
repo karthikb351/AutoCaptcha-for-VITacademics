@@ -706,7 +706,7 @@ function addCredits() {
         var textbox = document.getElementsByName('vrfcd')[0];
     var para = document.createElement("P");
     var aTag = document.createElement('a');
-    aTag.setAttribute('href',"https://github.com/karthikb351/AutoCaptcha-for-Chrome");
+    aTag.setAttribute('href',"https://github.com/karthikb351/AutoCaptcha-for-VITacademics");
     aTag.innerHTML = "AutoCaptcha";
     aTag.style.cssText="font-size: 10px;";
     var t = document.createTextNode(" - with ♥, Karthik Balakrishnan");
@@ -721,7 +721,7 @@ function addCredits() {
 
 function loaded() {
 
-    console.log("AutoCaptcha for Chrome");
+    console.log("AutoCaptcha for VITacademics");
 
     var canvas = document.createElement('canvas');
     var context = canvas.getContext('2d');
@@ -749,7 +749,7 @@ function loaded() {
     }
 
     console.log("Made with ♥, Karthik Balakrishnan");
-    console.log("http://github.com/karthikb351/AutoCaptcha-for-Chrome");
+    console.log("http://github.com/karthikb351/AutoCaptcha-for-VITacademics");
 }
 
 if (img.complete) {
