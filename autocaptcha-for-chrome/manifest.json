@@ -2,15 +2,15 @@
   "name": "AutoCaptcha for VITacademics",
   "version": "0.3.5",
   "author": "Karthik Balakrishnan",
-  "description": "Fills in the captcha for you at VIT's Academics page (academics.vit.ac.in)",
-  "permissions": ["*://academics.vit.ac.in/*"],
+  "description": "Fills in the captcha for you at VIT's Academics page (vtop.vit.ac.in)",
+  "permissions": ["*://vtop.vit.ac.in/*"],
   "content_scripts": [
     {
-      "matches": ["*://academics.vit.ac.in/parent/parent_login.asp","*://academics.vit.ac.in/student/stud_login.asp","*://academics.vit.ac.in/parent/","*://academics.vit.ac.in/student/","*://27.251.102.132/parent/parent_login.asp","*://27.251.102.132/student/stud_login.asp","*://27.251.102.132/parent/","*://27.251.102.132/student/"],
+      "matches": ["*://vtop.vit.ac.in/parent/parent_login.asp","*://vtop.vit.ac.in/student/stud_login.asp","*://vtop.vit.ac.in/parent/","*://vtop.vit.ac.in/student/","*://27.251.102.132/parent/parent_login.asp","*://27.251.102.132/student/stud_login.asp","*://27.251.102.132/parent/","*://27.251.102.132/student/"],
       "js": ["captcha.js"]
     },
     {
-      "matches": ["*://academics.vit.ac.in/*/attn_report.asp*","*://27.251.102.132/*/attn_report.asp*"],
+      "matches": ["*://vtop.vit.ac.in/*/attn_report.asp*","*://27.251.102.132/*/attn_report.asp*"],
       "all_frames": true,
       "js": ["attendance.js"]
     }
