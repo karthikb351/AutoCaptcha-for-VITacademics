@@ -1,6 +1,6 @@
 # AutoCaptcha for Chrome/Firefox
 
-Simple extension to fill in the captcha at [academics.vit.ac.in](academics.vit.ac.in).
+Simple extension to fill in the captcha at [vtop.vit.ac.in](vtop.vit.ac.in).
 
 ## Installation
 
