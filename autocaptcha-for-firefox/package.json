@@ -2,7 +2,7 @@
   "name": "autocaptcha-for-vitacademics",
   "title": "AutoCaptcha for VITacademics",
   "id": "jid1-aEL04CgHfwCOwA",
-  "description": "Fills in the captcha for you at VIT's Academics page (academics.vit.ac.in)",
+  "description": "Fills in the captcha for you at VIT's Academics page (vtop.vit.ac.in)",
   "author": "Karthik Balakrishnan",
   "license": "MIT",
   "version": "0.3.5"
