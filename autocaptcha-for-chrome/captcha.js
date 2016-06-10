@@ -612,23 +612,23 @@ function sort(sorter, captcha) {
 
 
 var getPixelMapFromImageData = function(imgData) {
-    var pixMap=[];
-    var count=0;
-    var temp=[];
-    for (var i=0;i<imgData.data.length;i+=4)
-    {
-        if(imgData.data[i+0]==255 && imgData.data[i+1]==254 && imgData.data[i+2]==223 && imgData.data[i+3]==255)
-            temp.push(0);
-        else
-            temp.push(1);
-        count++;
-        if(count%130==0)
-        {
-            pixMap.push(temp);
-            temp=[];
-        }
-    }
-    return pixMap;
+	var pixMap=[];
+	var count=0;
+	var temp=[];
+	for (var i=0;i<imgData.data.length;i+=4)
+	{
+		if(imgData.data[i+0]==255 && imgData.data[i+1]==254 && imgData.data[i+2]==223 && imgData.data[i+3]==255)
+			temp.push(0);
+		else
+			temp.push(1);
+		count++;
+		if(count%130==0)
+		{
+			pixMap.push(temp);
+			temp=[];
+		}
+	}
+	return pixMap;
 };
 
 
@@ -681,7 +681,7 @@ var getCaptcha = function(img) {
     return res;
 };
 
-
+//To add "Change Verification Code" Support: 
 var img = document.getElementById('imgCaptcha');
 var changeButton = document.getElementsByName('vrfcd')[0].nextSibling.nextSibling;
 changeButton.addEventListener("click", function(){
@@ -690,13 +690,13 @@ changeButton.addEventListener("click", function(){
     };
 });
 
+
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-57013788-1', 'auto');
-ga('send', 'pageview');
+
 
 function addCredits() {
     if(document.getElementById("credit"))
@@ -718,10 +718,11 @@ function addCredits() {
     }
 }
 
-
 function loaded() {
+    ga('create', 'UA-57013788-1', 'auto');
+    ga('send', 'pageview');
 
-    console.log("AutoCaptcha for VITacademics");
+    console.log("AutoCaptcha for VITacademics");  
 
     var canvas = document.createElement('canvas');
     var context = canvas.getContext('2d');
@@ -737,15 +738,15 @@ function loaded() {
     var endTime=new Date().getTime();
     if(captcha.length==6)
     {
-        console.info("Parsed Captcha "+captcha+" in "+(endTime-startTime)+" milliseconds");
-        var textbox = document.getElementsByName('vrfcd')[0];
-        
-        textbox.value=captcha;
+    	console.info("Parsed Captcha "+captcha+" in "+(endTime-startTime)+" milliseconds");
+    	var textbox = document.getElementsByName('vrfcd')[0];
+        addCredits();
+    	textbox.value=captcha;
         ga('send', 'event', 'captcha', 'solved_in', endTime-startTime); 
     }
     else
     {
-        console.warn("Error");
+    	console.warn("Error");
     }
 
     console.log("Made with ♥, Karthik Balakrishnan");
