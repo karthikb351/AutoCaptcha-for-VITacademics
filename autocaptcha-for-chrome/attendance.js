@@ -7,6 +7,4 @@ function getDateString(date) {
 			date.getFullYear();
 }
 
-console.log("hello");
-
 document.getElementsByName("to_date")[0].value=getDateString(new Date());
