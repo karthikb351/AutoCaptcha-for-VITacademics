@@ -748,6 +748,8 @@ function loaded() {
         console.warn("Error");
     }
 
+    document.querySelector('input[type="submit"]').focus();
+    
     console.log("Made with ♥, Karthik Balakrishnan");
     console.log("http://github.com/karthikb351/AutoCaptcha-for-VITacademics");
 }
